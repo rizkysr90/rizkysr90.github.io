@@ -227,7 +227,7 @@ li {
        padding-top: 355px;
    }
 }
-@media (max-width: 1024px){
+@media (max-width: 768px){
    .main-content,
    .second-main {
        width: 90%;
