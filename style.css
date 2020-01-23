@@ -67,14 +67,7 @@ a:active {
     padding-left: 60px;
 }
 
-.second-main {
-    overflow: auto;
-    padding-top: 10px;
-    padding-bottom: 70px;
-    border-bottom: 10px solid darkslateblue;
-    
 
-}
 .cust {
     text-shadow: 5px 3px 10px rgba(0, 0, 0, .8);
 }
@@ -86,20 +79,106 @@ a:active {
     padding-bottom: 10px;
     
 }
+/* new */
 
-.main-content,
-.second-main {
+.main-content {
+    height: 900px;
+    width: 100%;
+    padding-top: 20px;
     text-align: center;
-    width: 65%;
-    margin: auto;
-    max-width: 960px;
+   
 }
-.main-footer {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: 20px solid darkslateblue;
+
+.container {
+    width:95%;
+    margin:0 auto;
+}
+
+.title-article {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.preview {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 10px;
+    margin-top: 5px;
     
+}
+
+.image-card {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(darkslateblue, transparent 90%),
+                linear-gradient(to top, white, transparent 90%),
+                url('main-header.jpg') no-repeat center;
+    background-size: cover; 
+    border-radius: 15px 15px 0 0;
+ 
+}
+
+.text-box {
+    width: 30%;
+    height: 10%;
+    background-color:white;
+    color: darkslateblue;
+    margin-top: -60px;
+    text-align: center;
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+    padding-top: 5px;
+}
+
+
+.card-article {
+    height:350px;
+    width: 285px;
+    background:white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px -2px rgba(72,61,139,0.75);
+    float: left;
+    margin: 10px 13px 10px 22px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/* last */
+
+
+
+
+.main-footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color:darkslateblue;
+    color: white;
+    
+}
+
+.foot {
+    color: white;
+}
+.main-footer a:link {
+    color: white;
+}
+
+.main-footer a:hover {
+    color:#261f4f;
 }
 
 .intro {
@@ -108,57 +187,16 @@ a:active {
     text-align: center;
 }
 
-.main-content{
-    padding-top: 25px;
-    padding-bottom: 75px;
-}
+
 
 .do {
     color: darkslateblue;
 }
 
-.callout {
-    font-size: 1.25em;
-    border-bottom: 3px solid;
-    padding: 0 9px 3px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.lifelong {
-    font-size: 1.25em; /* 20px/16px */
-    line-height: 1.6; 
-    text-align: center;
-
-}
 
 
-.skilled,
-.aboutme {
-    width: 46.5%;
 
-}
 
-.skilled {
-    float: right;
-    background-color: white;
-    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .3);
-    margin-right: 15px;
-    margin-top: 10px;
-    padding: 20px 25px;
-    border-radius: 25px;
-}
-
-.aboutme {
-    float: left;
-    background-color: white;
-    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .3);
-    margin-left: 15px;
-    margin-top: 10px;
-    padding: 20px 25px;
-    border-radius: 25px;
-  
-}
 /* Nav bar */
 .bar ul,
 .bar li {
@@ -191,30 +229,10 @@ a:active {
     background-color: #261f4f;
 }
 
-
-   
-
-
-
-
-
-ul {
-    list-style-type: none;
-    padding:0;
-}
-
-li {
-    color: darkslateblue;
-}
-
 /* Media CSS */
 
-@media (max-width: 1024px) {
-   .main-content,
-   .second-main {
-       width: 90%;
-   }
-   
+/*@media (max-width: 768px) {
+ 
    h1 {
        font-size: 3.125rem;
    }
@@ -226,12 +244,9 @@ li {
    .header-home {
        padding-top: 355px;
    }
-}
+}*/
 @media (max-width: 768px){
-   .main-content,
-   .second-main {
-       width: 90%;
-   }
+
     .main-header {
         height: 380px;
     }
@@ -250,26 +265,13 @@ li {
         font-size: .7rem;
     }            
 
-    .lifelong {
-        margin-top: 20px;
-    }
+ 
 
     h2 {
         margin-bottom: 30px;
         font-size: 2rem;
     }
-    .main-content {
-        padding-bottom: 25px;
-    }
-
-    .skilled,
-    .aboutme {
-        float: none;
-        width: 90%;
-        padding: 25px;
-        margin:30px auto;
-    }
-
+   
     .bar a {
         font-size: .8em;
         color:darkslateblue;
@@ -282,6 +284,24 @@ li {
     }
     .bar li {
         padding: 20px 10px;
+    }
+
+    .navbar {
+        padding:0;
+    }
+    .main-content{
+        border-top: 5px solid rgba(72,61,139,0.75);
+        margin-bottom: 30px;
+    }
+    .card-article{
+        margin: 10px 0 30px 10px;
+        width: 95%;
+       
+    }
+    .preview {
+        font-size: 1em;
+    }
 }   
+
 
 
